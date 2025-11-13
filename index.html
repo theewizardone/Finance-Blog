@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartStart Finance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind dark mode setup
+    tailwind.config = { darkMode: 'class' };
+  </script>
+  <!-- Google AdSense loader (single include per page). Replace ca-pub-XXXXXXXXXXXX with your publisher ID. -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/theme.css">
+  <style>
+    .theme-toggle { cursor: pointer; border: 1px solid transparent; padding: 6px 10px; border-radius: 8px; transition: all 0.3s ease; }
+    .theme-toggle:hover { background-color: rgba(0,0,0,0.05); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-gray-100">
+
+<!-- Navigation -->
+<header class="bg-white shadow dark:bg-gray-800 dark:shadow-gray-700">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">SmartStart Finance</h1>
+    <nav class="space-x-4">
+      <a href="#start" class="hover:text-indigo-800 dark:hover:text-indigo-300">Home</a>
+      <a href="#blog" class="hover:text-indigo-800 dark:hover:text-indigo-300">Blog</a>
+      <a href="#resources" class="hover:text-indigo-800 dark:hover:text-indigo-300">Courses</a>
+      <a href="#membership" class="hover:text-indigo-800 dark:hover:text-indigo-300">Community</a>
+      <a href="#coaching" class="hover:text-indigo-800 dark:hover:text-indigo-300">Coaching</a>
+    </nav>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle text-sm">🌙 Dark Mode</button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="start" class="max-w-6xl mx-auto p-8 text-center">
+  <h2 class="text-4xl font-bold mb-4">Learn Personal Finance & Build Wealth</h2>
+  <p class="text-gray-700 dark:text-gray-300 mb-6">Your ultimate beginner-friendly guide to saving, investing, and earning smarter.</p>
+  <a href="#about" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Start Learning</a>
+</section>
+
+<!-- Featured Blog Posts -->
+<section id="blog" class="max-w-6xl mx-auto p-8 grid md:grid-cols-2 gap-6">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+    <img src="assets/images/blog1.jpg" alt="Blog 1" class="rounded-lg mb-4">
+    <h3 class="font-bold text-xl mb-2">Budgeting Basics for Beginners</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">Learn how to track your income and expenses without stress.</p>
+    <a href="#track-income" class="text-indigo-600 hover:underline dark:text-indigo-400">Read More →</a>
+  </div>
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition">
+    <img src="assets/images/blog2.jpg" alt="Blog 2" class="rounded-lg mb-4">
+    <h3 class="font-bold text-xl mb-2">Simple Investing Tips</h3>
+    <p class="text-gray-600 dark:text-gray-300 mb-4">Start investing with minimal risk and grow your wealth steadily.</p>
+    <a href="#post-investing-basics" class="text-indigo-600 hover:underline dark:text-indigo-400">Read More →</a>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="max-w-6xl mx-auto p-8 bg-indigo-50 dark:bg-gray-700 rounded-xl text-center mt-8">
+  <h3 class="text-2xl font-bold mb-2">Download Our Free E-Book</h3>
+  <p class="text-gray-700 dark:text-gray-300 mb-4">Learn personal finance step by step with our beginner-friendly guide.</p>
+  <a href="#resources" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Get the E-Book</a>
+</section>
+
+<!-- About / Intro (from intro.html) -->
+<main id="about" class="max-w-5xl mx-auto p-8 mt-10 bg-white rounded-xl shadow-lg">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold text-indigo-700 mb-4">Welcome to SmartStart Finance</h1>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">Your journey to financial freedom starts here! Whether you're just learning how to budget or ready to start investing, we’re here to guide you step-by-step.</p>
+    <img src="assets/images/intro-hero.jpg" alt="SmartStart Finance Intro" class="mx-auto rounded-lg shadow-lg mb-8 w-full max-w-3xl">
+
+    <p class="text-gray-700 text-base leading-relaxed max-w-3xl mx-auto mb-8">SmartStart Finance is designed for beginners who want to understand money management in simple, practical terms. Our content focuses on <strong>budgeting, saving, investing, debt management</strong>, and building long-term financial habits. You’ll find articles, e-books, and video courses to help you take real action — no confusing jargon, just clear steps.</p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 text-left">
+      <div class="bg-indigo-50 p-6 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2 text-indigo-700">📘 Learn at Your Pace</h3>
+        <p class="text-gray-600 text-sm">Access simple, self-paced lessons on budgeting, saving, and investing.</p>
+      </div>
+      <div class="bg-indigo-50 p-6 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2 text-indigo-700">💬 Join a Community</h3>
+        <p class="text-gray-600 text-sm">Connect with others who share your financial goals and challenges.</p>
+      </div>
+      <div class="bg-indigo-50 p-6 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-2 text-indigo-700">🎯 Take Action</h3>
+        <p class="text-gray-600 text-sm">Apply what you learn immediately with our downloadable tools and templates.</p>
+      </div>
+    </div>
+
+    <div class="mt-10"><a href="#resources" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Explore Our Free Course →</a></div>
+  </div>
+</main>
+
+<!-- Resources / Course (from course.html) -->
+<section id="resources" class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg">
+  <div class="grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-3xl font-bold mb-4">Personal Finance Mastery Course</h1>
+      <p class="text-gray-700 mb-4">Learn budgeting, saving, and investing step by step. Perfect for beginners!</p>
+      <ul class="list-disc pl-5 text-gray-700 space-y-2"><li>Create your first budget</li><li>Start investing safely</li><li>Build financial independence</li></ul>
+      <div class="mt-6 flex gap-4 flex-wrap"><a href="#resources" class="bg-indigo-600 text-white px-5 py-3 rounded-lg hover:bg-indigo-700">Enroll Now</a><a href="#resources" class="bg-indigo-100 text-indigo-700 px-5 py-3 rounded-lg hover:bg-indigo-200">Download E-Book</a></div>
+    </div>
+    <div><img src="assets/images/course.jpg" alt="Course Image" class="w-full h-80 object-cover rounded-lg shadow-lg"></div>
+  </div>
+
+  <div class="mt-12"><h2 class="text-2xl font-bold mb-6 text-center">Student Testimonials</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><div class="bg-gray-50 p-5 rounded-lg shadow"><p>"This course helped me finally understand budgeting and saving!"</p></div><div class="bg-gray-50 p-5 rounded-lg shadow"><p>"Easy to follow and full of practical advice. Highly recommend!"</p></div><div class="bg-gray-50 p-5 rounded-lg shadow"><p>"The e-book alone was worth it. Fantastic resources!"</p></div></div>
+  </div>
+
+  <!-- Google AdSense (responsive) -->
+  <div class="mt-8">
+    <!-- Replace ca-pub-XXXXXXXXXXXX with your AdSense publisher ID and data-ad-slot with your ad slot. -->
+    <ins class="adsbygoogle block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</section>
+
+<!-- Membership (from membership.html) -->
+<section id="membership" class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg">
+  <h1 class="text-3xl font-bold text-center mb-4">Join Our Exclusive Community</h1>
+  <p class="text-gray-700 text-center mb-8">Get access to exclusive resources, weekly Q&A, and a supportive community of learners.</p>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Weekly Q&A</h3><p class="text-gray-600 mt-2">Direct answers to your personal finance questions.</p></div><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Exclusive Resources</h3><p class="text-gray-600 mt-2">Templates, cheat sheets, and guides for members only.</p></div><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Community Support</h3><p class="text-gray-600 mt-2">Interact with other members and share tips.</p></div></div>
+  <div class="mt-12 text-center"><a href="#membership" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Join Now</a></div>
+  <!-- Google AdSense (responsive) -->
+  <!-- Google AdSense (responsive) -->
+  <div class="mt-8">
+    <ins class="adsbygoogle block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+<!-- Coaching (from coaching.html) -->
+<section id="coaching" class="max-w-4xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg">
+  <h1 class="text-3xl font-bold text-center mb-4">Book Your Coaching Session</h1>
+  <p class="text-gray-700 text-center mb-8">Get personalized guidance to improve your finances, budgeting, and investing.</p>
+  <div class="grid sm:grid-cols-2 gap-6"><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Personalized Plan</h3><p class="text-gray-600 mt-2">Tailored advice to meet your financial goals.</p></div><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Expert Guidance</h3><p class="text-gray-600 mt-2">Learn strategies from an experienced coach.</p></div><div class="bg-indigo-50 p-6 rounded-lg shadow hover:shadow-md"><h3 class="font-semibold text-lg">Flexible Scheduling</h3><p class="text-gray-600 mt-2">Book at a time convenient for you.</p></div></div>
+  <div class="mt-12 bg-gray-50 p-6 rounded-xl shadow">
+    <h2 class="text-2xl font-bold text-center mb-6">Book Now</h2>
+    <form class="grid gap-4" aria-label="Coaching booking form">
+      <div>
+        <label for="fullName" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Full Name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="Full Name" title="Enter your full name" class="p-3 border border-gray-300 rounded-lg w-full">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Email Address" title="Enter your email address" class="p-3 border border-gray-300 rounded-lg w-full">
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Phone Number</label>
+        <input id="phone" name="phone" type="tel" placeholder="Phone Number" title="Enter your phone number" class="p-3 border border-gray-300 rounded-lg w-full">
+      </div>
+      <div>
+        <label for="datetime" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Preferred Date &amp; Time</label>
+        <input id="datetime" name="datetime" type="datetime-local" placeholder="Select date and time" title="Choose preferred date and time for the session" class="p-3 border border-gray-300 rounded-lg w-full">
+      </div>
+      <div>
+        <label for="notes" class="block text-sm font-medium text-gray-700 dark:text-gray-200">Additional Notes (optional)</label>
+        <textarea id="notes" name="notes" placeholder="Additional Notes (optional)" title="Any additional information for the coach" class="p-3 border border-gray-300 rounded-lg w-full"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Book Session</button>
+      </div>
+    </form>
+  </div>
+  <!-- Google AdSense (responsive) -->
+  <div class="mt-8">
+    <ins class="adsbygoogle block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</section>
+
+<!-- Full Blog Posts -->
+<section id="post-investing-basics" class="max-w-4xl mx-auto px-4 py-12"><article class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8"><h1 class="text-3xl md:text-5xl font-bold mb-4">Start Investing With Minimal Risk</h1><p class="mb-4 leading-relaxed">Investing is one of the most reliable ways to build wealth over time — but it doesn’t have to be risky or complicated. Many beginners avoid investing because they fear losing money. The truth is, with the right strategy and mindset, you can start investing safely and achieve steady growth.</p><h3 class="text-xl font-semibold mt-6 mb-3">1. Understand Your Risk Tolerance</h3><p class="mb-4 leading-relaxed">Before investing, it’s essential to know how much risk you can handle emotionally and financially. If market fluctuations cause you stress, focus on stable investment types such as index funds or government bonds.</p><h3 class="text-xl font-semibold mt-6 mb-3">2. Start Small and Stay Consistent</h3><p class="mb-4 leading-relaxed">You don’t need thousands of dollars to begin. Even small, regular investments compound significantly over time. Consistency beats timing — the earlier you start, the more time your money has to grow.</p><h3 class="text-xl font-semibold mt-6 mb-3">3. Diversify Your Portfolio</h3><p class="mb-4 leading-relaxed">Avoid putting all your money into one stock or asset. A mix of stocks, bonds, and mutual funds can protect you from major losses while offering stable returns. Consider low-cost ETFs that mirror the overall market.</p><h3 class="text-xl font-semibold mt-6 mb-3">4. Focus on Long-Term Growth</h3><p class="mb-4 leading-relaxed">Investing isn’t about getting rich overnight. It’s about building wealth gradually. Long-term investing allows you to ride out short-term market dips and benefit from compounding interest — one of the most powerful forces in finance.</p><h3 class="text-xl font-semibold mt-6 mb-3">5. Keep Learning</h3><p class="mb-4 leading-relaxed">The best investors never stop learning. Read books, follow financial blogs, or take an online investing course. Knowledge reduces fear and helps you make better decisions over time.</p><div class="mt-8 border-t pt-6 text-gray-600 text-sm"><p>Written by <span class="text-indigo-600 font-medium">SmartStart Finance Team</span></p><p>Published on <span class="font-medium">November 2025</span></p></div></article><div class="text-center mt-12"><a href="#blog" class="text-indigo-600 hover:underline font-medium">← Back to Blog</a></div></section>
+
+<section id="track-income" class="max-w-4xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg">
+  <article>
+    <img src="assets/images/track-income.jpg" alt="Tracking income and expenses" class="w-full h-80 object-cover rounded-lg mb-6">
+
+    <h1 class="text-3xl font-bold text-indigo-700 mb-4">How to Track Your Income and Expenses Without Stress</h1>
+    <p class="text-gray-500 mb-6">Published on November 12, 2025 · 8 min read</p>
+
+    <p class="text-gray-700 mb-6 leading-relaxed">Managing your money doesn’t have to be stressful. The key is building a simple system that helps you know exactly where your money goes — without spending hours every week on spreadsheets. In this post, we’ll break down an easy, beginner-friendly method to track your income and expenses.</p>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4">1️⃣ Start With a Simple Budget Template</h2>
+    <p class="text-gray-700 mb-4">Don’t overcomplicated it! Start by dividing your income into broad categories:</p>
+    <ul class="list-disc pl-6 mb-6 text-gray-700">
+      <li>💰 Income (Salary, Freelance, Side Hustles)</li>
+      <li>🏠 Expenses (Bills, Rent, Subscriptions)</li>
+      <li>🎯 Savings (Emergency Fund, Goals)</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4">2️⃣ Automate Where Possible</h2>
+    <p class="text-gray-700 mb-6">Set up automatic transfers for savings and bill payments. This way, you’ll reduce the number of manual entries you have to track. Most banks let you set up alerts or summaries of your transactions so you can keep track without logging in daily.</p>
+
+    <!-- Google AdSense (responsive) -->
+    <div class="mt-8">
+      <ins class="adsbygoogle block"
+           data-ad-client="ca-pub-XXXXXXXXXXXX"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <h2 class="text-2xl font-semibold mt-8 mb-4">💡 Final Thoughts</h2>
+    <p class="text-gray-700 mb-6">The goal isn’t to track every penny — it’s to develop awareness and confidence with your money. Over time, you’ll see patterns, identify leaks, and start making better choices naturally.</p>
+
+    <div class="bg-indigo-50 p-6 rounded-lg text-center mt-10">
+      <h3 class="text-lg font-semibold text-indigo-700 mb-2">Ready to Take the Next Step?</h3>
+      <p class="text-gray-700 mb-4">Join our free course to learn how to build a full budgeting system and grow your savings.</p>
+      <a href="#resources" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Enroll for Free</a>
+    </div>
+  </article>
+</section>
+
+<section id="budgeting-basics" class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-lg mt-8">
+  <h1 class="text-3xl font-bold mb-4">Budgeting Basics for Beginners</h1>
+  <p class="text-gray-600 mb-6">Published on Nov 12, 2025 • Category: Personal Finance</p>
+  <img src="assets/images/blog1.jpg" alt="Blog 1" class="w-full h-64 object-cover rounded-lg mb-6">
+  <p>Learn how to manage your income and expenses effectively to save money without stress.</p>
+
+  <!-- Google AdSense (responsive) -->
+  <div class="my-6">
+  <!-- Google AdSense (responsive) -->
+  <div class="my-6">
+    <ins class="adsbygoogle block"
+         data-ad-client="ca-pub-8524653640899702"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div class="my-6 p-4 bg-green-200 rounded-lg flex justify-between items-center">
+    <div>
+      <h3 class="font-bold">Recommended Product</h3>
+      <p class="text-gray-700">Finance Tracker App</p>
+    </div>
+    <a href="#membership" class="bg-green-600 text-white px-4 py-2 rounded-lg">Buy Now</a>
+  </div>
+  <p>Conclusion: Budgeting is the foundation for financial success. Start small, stay consistent.</p>
+</section>
+
+<!-- Footer (single consolidated footer) -->
+<footer class="mt-16 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-700">
+  <div class="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-6">
+    <div>
+      <div class="text-lg font-semibold">SmartStart Finance</div>
+      <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">Personal finance made simple. Disclaimer: this site provides educational content and is not financial advice.</div>
+    </div>
+    <div>
+      <div class="font-semibold">Quick Links</div>
+      <ul class="mt-3 text-sm text-gray-600 dark:text-gray-400 space-y-2 footer-quicklinks">
+        <li><a href="#start">Start Here</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#coaching">Coaching</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-semibold">Connect</div>
+      <div class="mt-3 flex gap-3">
+        <a href="https://x.com/Morara_alfonce?t=MF2JNUYBJVx8NiHh--_RpQ&s=09" class="footer-social-link" aria-label="Twitter"> 
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 11 4.77 12.84 12.84 0 0 1 1.64 2.15 4.48 4.48 0 0 0 3 9.72 4.41 4.41 0 0 1 .89 9v.06a4.52 4.52 0 0 0 3.62 4.42A4.52 4.52 0 0 1 2 14.5v.06a4.52 4.52 0 0 0 3.63 4.42A9.06 9.06 0 0 1 1 19.54 12.8 12.8 0 0 0 7 21c8.29 0 12.83-6.87 12.83-12.83v-.58A9.22 9.22 0 0 0 23 3z" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alphonce-morara/" class="footer-social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.1 1 2.48 1s2.5 1.12 2.5 2.5zM.2 8.2h4.56V24H.2V8.2zM8.9 8.2h4.37v2.12h.06c.61-1.16 2.1-2.38 4.33-2.38 4.63 0 5.48 3.05 5.48 7.01V24h-4.57v-6.65c0-1.58-.03-3.62-2.21-3.62-2.22 0-2.56 1.73-2.56 3.5V24H8.9V8.2z" fill="currentColor"/></svg></a>
+        <a href="https://youtube.com/@swiftechsolutions-s3y?si=JfeCbeHhtNzKSxPU" class="footer-social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23.5 6.2a2.8 2.8 0 0 0-1.96-1.98C19.7 3.6 12 3.6 12 3.6s-7.7 0-9.54.62A2.8 2.8 0 0 0 .5 6.2C0 8.11 0 12 0 12s0 3.89.5 5.8a2.8 2.8 0 0 0 1.96 1.98c1.84.62 9.54.62 9.54.62s7.7 0 9.54-.62a2.8 2.8 0 0 0 1.96-1.98C24 15.89 24 12 24 12s0-3.89-.5-5.8zM9.6 15.6V8.4l6.4 3.6-6.4 3.6z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-700">© 2025 Alfonce Morara — All rights reserved.</div>
+</footer>
+
+<!-- Dark Mode Script -->
+<script defer src="assets/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+:root {
+  --bg: #f8fafc; /* gray-50 */
+  --surface: #ffffff; /* white */
+  --text: #0f172a; /* gray-900 */
+  --muted: #6b7280; /* gray-500 */
+  --accent: #4f46e5; /* indigo-600 */
+}
+
+[data-theme="dark"] {
+  --bg: #020617; /* very dark */
+  --surface: #0b1220; /* card background */
+  --text: #e6eef8; /* light text */
+  --muted: #9ca3af; /* muted text */
+  --accent: #8b5cf6; /* indigo-ish */
+}
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 250ms ease, color 250ms ease;
+  /* Smooth scroll for in-page anchor navigation */
+  scroll-behavior: smooth;
+}
+
+header, main, footer, .card, .rounded-xl, .rounded-lg {
+  background-color: var(--surface);
+}
+
+a { color: var(--accent); }
+
+.theme-toggle {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  background: transparent;
+  color: inherit;
+}
+.theme-toggle:hover { opacity: 0.95; transform: translateY(-1px); }
+
+/* Override common Tailwind utility colors when dark theme is active */
+[data-theme="dark"] .bg-white { background-color: var(--surface) !important; }
+[data-theme="dark"] .bg-gray-50 { background-color: transparent !important; }
+[data-theme="dark"] .bg-indigo-50 { background-color: rgba(124,58,237,0.08) !important; }
+[data-theme="dark"] .text-gray-600,
+[data-theme="dark"] .text-gray-700,
+[data-theme="dark"] .text-gray-500,
+[data-theme="dark"] .text-gray-300 { color: var(--muted) !important; }
+[data-theme="dark"] .text-indigo-600 { color: var(--accent) !important; }
+
+/* Ensure inputs and panels match dark surface */
+[data-theme="dark"] input, [data-theme="dark"] textarea, [data-theme="dark"] select {
+  background-color: rgba(255,255,255,0.02) !important;
+  color: var(--text) !important;
+  border-color: rgba(255,255,255,0.06) !important;
+}
+
+/* Floating toggle placement fallback */
+.theme-toggle-floating {
+  position: fixed;
+  right: 18px;
+  top: 18px;
+  z-index: 60;
+}
+
+/* Footer styling */
+footer {
+  color: var(--muted);
+}
+
+footer a { color: var(--accent); }
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.03);
+  transition: transform 160ms ease, background 160ms ease;
+}
+.footer-social-link:hover { transform: translateY(-2px); background: rgba(0,0,0,0.06); }
+
+[data-theme="dark"] .footer-social-link { background: rgba(255,255,255,0.03); }
+
+.footer-quicklinks a { display: inline-block; color: inherit; }
+
